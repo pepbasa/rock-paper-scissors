@@ -23,3 +23,9 @@ function getHumanChoice() {
 }
 console.log(getHumanChoice())
 
+//create two variables - one will store the score for the user, the other for the computer. initialize both with value of 0
+
+//remember: let sets an initial value while allowing the value to be changed later. const sets a permanent value
+
+let humanScore=0;
+let computerScore=0;
