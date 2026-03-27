@@ -53,7 +53,16 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-//write a function that checks who has a higher score, and decl
+//write a function that checks who has a higher score, and declares the winner
+
+function declareWinner(){
+    if (humanScore>computerScore)   {
+        console.log(`You win!`)
+    }
+    else {
+        console.log(`You lose :/`)
+    }
+}
 
 //write a function named playGame that calls playRound to play 5 rounds, keeps track of the scores and declares a winner at the end
 
