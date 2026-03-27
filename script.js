@@ -27,9 +27,9 @@ console.log(getHumanChoice())
 
 //remember: let sets an initial value while allowing the value to be changed later. const sets a permanent value
 
-let humanScore=0;
-let computerScore=0;
-let round =1;
+let humanScore= 0;
+let computerScore= 0;
+let round = 1;
 
 //write a function that takes the human and computer player choices as arguments, plays a single round, increments the round winner’s score and logs a winner announcement
 function playRound(humanChoice, computerChoice) {
@@ -66,3 +66,20 @@ function declareWinner(){
 
 //write a function named playGame that calls playRound to play 5 rounds, keeps track of the scores and declares a winner at the end
 
+function playGame(){
+    humanChoice=getHumanChoice();
+    computerChoice=getComputerChoice();
+    playRound(humanChoice, computerChoice);
+    console.log(`Your score: ${humanScore}`);
+    console.log(`Computer's score: ${computerScore}`);
+    round+=1;
+    if (round>=5) {
+        declareWinner();
+    }
+    else{
+        console.log(`Round Number: ${round}`);
+        playGame();
+    }
+}
+
+playGame()
