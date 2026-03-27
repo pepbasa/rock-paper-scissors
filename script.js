@@ -29,6 +29,7 @@ console.log(getHumanChoice())
 
 let humanScore=0;
 let computerScore=0;
+let round =1;
 
 //write a function that takes the human and computer player choices as arguments, plays a single round, increments the round winner’s score and logs a winner announcement
 function playRound(humanChoice, computerChoice) {
@@ -50,3 +51,9 @@ function playRound(humanChoice, computerChoice) {
         computerScore+=1;
     }
 }
+
+
+//write a function that checks who has a higher score, and decl
+
+//write a function named playGame that calls playRound to play 5 rounds, keeps track of the scores and declares a winner at the end
+
