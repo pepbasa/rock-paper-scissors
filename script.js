@@ -3,7 +3,6 @@ console.log("Heyyy People");
 function getComputerChoice() {
     num = Math.random();
     //remember: you have to add parentheses after a method like random for it to work properly
-    console.log(num)
     if (num<0.333) {
         return 'rock';
     }
@@ -16,5 +15,11 @@ function getComputerChoice() {
 }
 console.log(getComputerChoice())
 
+//write a function that will take the user choice and return it. use prompt to get user input
 
+function getHumanChoice() {
+    let userchoice = prompt("rock, paper, or scissors?");
+    return userchoice.toLowerCase();
+}
+console.log(getHumanChoice())
 
