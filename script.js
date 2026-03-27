@@ -29,3 +29,24 @@ console.log(getHumanChoice())
 
 let humanScore=0;
 let computerScore=0;
+
+//write a function that takes the human and computer player choices as arguments, plays a single round, increments the round winner’s score and logs a winner announcement
+function playRound(humanChoice, computerChoice) {
+    if (
+        (humanChoice === 'rock' && computerChoice === 'scissors') ||
+        (humanChoice === 'scissors' && computerChoice === 'paper') ||
+        (humanChoice === 'paper' && computerChoice === 'rock')
+    )   {
+        console.log(`You win! ${humanChoice} beats ${computerChoice} every time.`);
+        humanScore += 1;
+    }
+    else if (
+        humanChoice === computerChoice
+    )   {
+        console.log (`It's a tie! Both of you chose ${humanChoice}`);
+    }
+    else {
+        console.log(`You lose this round! ${computerChoice} beats ${humanChoice}. Better luck next time.`);
+        computerScore+=1;
+    }
+}
